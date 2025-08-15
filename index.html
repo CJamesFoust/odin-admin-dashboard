@@ -11,7 +11,7 @@
 <body>
     <div class="nav left--section" id="nav">
         <div class="logo--title">
-            <h1 class="title--text">Dashboard</h1>
+            <h1 class="title--text" id="dashboard">Dashboard</h1>
         </div>
         <div class="nav--upper-links">
             <ul>
@@ -33,58 +33,207 @@
     </div>
     <div class="right--section">
         <header class="header" id="header">
-            <div class="header--search-bar">
-                <input type="search" name="search-bar" id="search-bar">
-            </div>
-            <div class="header--profile">
-                <div class="header--notification-bell">Bell</div>
-                <div class="header--profile-image">
-                    <img src="/assets/cat.png" alt="cat" id="small-profile-image">
+            <div class="header--top-section">
+                <div class="header--search-bar">
+                    <input type="search" name="search-bar" id="search-bar">
                 </div>
-                <div class="header--username">Morgan Oakley</div>
-            </div>
-            <div class="header--welcome">
-                <div class="header--profile-image profile-image-large">
-                    <img src="/assets/cat.png" alt="cat" id="large-profile-image">
-                </div>
-                <div class="header--welcome-text">
-                    <div class="header--salutations">Hi there,</div>
-                    <div class="header--username-handle">Morgan Oakley (@morgan)</div>
+                <div class="header--profile">
+                    <div class="header--notification-bell" id="bell"></div>
+                    <div class="header--profile-image">
+                        <img src="/assets/cat.png" alt="cat" id="small-profile-image" height="30px" width="30px">
+                    </div>
+                    <div class="header--username">Morgan Oakley</div>
                 </div>
             </div>
-            <div class="header--buttons">
-                <button name="button--new">New</button>
-                <button name="button--upload">Upload</button>
-                <button name="button--share">Share</button>
+            <div class="header--bottom-section">
+                <div class="header--welcome">
+                    <div class="header--profile-image profile-image-large">
+                        <img src="/assets/cat.png" alt="cat" id="large-profile-image" height="45px" width="45px">
+                    </div>
+                    <div class="header--welcome-text">
+                        <div class="header--salutations">Hi there,</div>
+                        <div class="header--username-handle">Morgan Oakley (@morgan)</div>
+                    </div>
+                </div>
+                <div class="header--buttons">
+                    <button name="button--new">New</button>
+                    <button name="button--upload">Upload</button>
+                    <button name="button--share">Share</button>
+                </div>
             </div>
         </header>
         <section class="content" id="content">
             <div class="content--your-projects">
                 <h3 class="content--projects-title">Your Projects</h3>
                 <section class="content--cards-container">
-                    <div class="card card-1">Super Cool Project</div>
-                    <div class="card card-2">Less Cool Project</div>
-                    <div class="card card-3">Impossible App</div>
-                    <div class="card card-4">Easy Peasy App</div>
-                    <div class="card card-5">Ad Blocker</div>
-                    <div class="card card-6">Money Maker</div>
+                    <div class="card card-1">
+                        <div class="card--content">
+                            <div class="card--text-buttons">
+                                <div class="card--text">
+                                    <h5>Super Cool Project</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate,
+                                        perspiciatis
+                                        quibusdam quia ex amet consequatur esse magni mollitia dolorum nihil ducimus,
+                                        natus at
+                                        corporis modi.</p>
+                                </div>
+                                <div class="card--buttons">
+                                    <button id="favorite"></button>
+                                    <button id="view"></button>
+                                    <button id="share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <div class="card--content">
+                            <div class="card--text-buttons">
+                                <div class="card--text">
+                                    <h5>Less Cool Project</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, est quo? Harum
+                                        distinctio,
+                                        dicta vitae dolore ipsam molestiae quos nobis ab quis laborum, perferendis
+                                        praesentium
+                                        neque iste eaque asperiores possimus!</p>
+                                </div>
+                                <div class="card--buttons">
+                                    <button id="favorite"></button>
+                                    <button id="view"></button>
+                                    <button id="share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-3">
+                        <div class="card--content">
+                            <div class="card--text-buttons">
+                                <div class="card--text">
+                                    <h5>Impossible App</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit culpa repudiandae
+                                        saepe
+                                        distinctio quae ipsa, ipsam nemo ipsum, necessitatibus porro totam. Commodi sint
+                                        mollitia, expedita ab voluptates deleniti quae quidem.</p>
+                                </div>
+                                <div class="card--buttons">
+                                    <button id="favorite"></button>
+                                    <button id="view"></button>
+                                    <button id="share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-4">
+                        <div class="card--content">
+                            <div class="card--text-buttons">
+                                <div class="card--text">
+                                    <h5>Easy Peasy App</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nihil obcaecati
+                                        natus
+                                        maxime delectus, alias fugiat tempore, tempora perferendis quam nam doloremque
+                                        voluptates. Nam necessitatibus porro debitis ducimus reprehenderit architecto?
+                                    </p>
+                                </div>
+                                <div class="card--buttons">
+                                    <button id="favorite"></button>
+                                    <button id="view"></button>
+                                    <button id="share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-5">
+                        <div class="card--content">
+                            <div class="card--text-buttons">
+                                <div class="card--text">
+                                    <h5>Ad Blocker</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo libero
+                                        exercitationem
+                                        atque ipsa voluptatem repellat, asperiores hic, sint maiores dolorem aspernatur
+                                        animi ex
+                                        eos facere molestias doloribus quos consequuntur reiciendis!</p>
+                                </div>
+                                <div class="card--buttons">
+                                    <button id="favorite"></button>
+                                    <button id="view"></button>
+                                    <button id="share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-6">
+                        <div class="card--content">
+                            <div class="card--text-buttons">
+                                <div class="card--text">
+                                    <h5>Money Maker</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores officiis
+                                        dolore
+                                        fugit et illo consequatur velit, ducimus at cupiditate exercitationem ut
+                                        voluptate?
+                                        Accusantium nisi voluptatum ipsam eos, unde hic asperiores.</p>
+                                </div>
+                                <div class="card--buttons">
+                                    <button id="favorite"></button>
+                                    <button id="view"></button>
+                                    <button id="share"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
-            <div class="content--announcements">
-                <h3 class="content--announcements-title">Accouncements</h3>
-                <div class="content--announcements-container">
-                    <div class="content--accouncement-content">Site Maintenance</div>
-                    <div class="content--accouncement-content">Community Share Day</div>
-                    <div class="content--accouncement-content">Updated Privacy Policy</div>
+            <div class="content--announcements-trending">
+                <div class="content--announcements">
+                    <h3 class="content--announcements-title">Accouncements</h3>
+                    <div class="content--announcements-container">
+                        <div class="content--announcement-content">
+                            <h5>Site Maintenance</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quia praesentium
+                                non, sapiente nulla impedit asperiores quis!</p>
+                        </div>
+                        <div class="content--announcement-content">
+                            <h5>Community Share Day</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quia praesentium
+                                non, sapiente nulla impedit asperiores!</p>
+                        </div>
+                        <div class="content--announcement-content">
+                            <h5>Updated Privacy Policy</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quia praesentium
+                                non!</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="content--trending">
-                <h3 class="content--trending-title">Trending</h3>
-                <div class="content--trending-container">
-                    <div class="content--trending-item">World Peace Builder</div>
-                    <div class="content--trending-item">Super Cool Project</div>
-                    <div class="content--trending-item">Life Changing App</div>
-                    <div class="content--trending-item">No Traffic Maker</div>
+                <div class="content--trending">
+                    <h3 class="content--trending-title">Trending</h3>
+                    <div class="content--trending-container">
+                        <div class="content--trending-item">
+                            <img src="/assets/img1.jpg" alt="" width="35px" height="35px">
+                            <div class="content--trending-text">
+                                <div class="content--trending-handle">@tegan</div>
+                                <div class="content--trending-project">World Peace Builder</div>
+                            </div>
+                        </div>
+                        <div class="content--trending-item">
+                            <img src="/assets/cat.png" alt="" width="35px" height="35px">
+                            <div class="content--trending-text">
+                                <div class="content--trending-handle">@morgan</div>
+                                <div class="content--trending-project">Super Cool Project</div>
+                            </div>
+                        </div>
+                        <div class="content--trending-item">
+                            <img src="/assets/img2.jpg" alt="" width="35px" height="35px">
+                            <div class="content--trending-text">
+                                <div class="content--trending-handle">@kendall</div>
+                                <div class="content--trending-project">Life Changing App</div>
+                            </div>
+                        </div>
+                        <div class="content--trending-item">
+                            <img src="/assets/img3.jpg" alt="" width="35px" height="35px">
+                            <div class="content--trending-text">
+                                <div class="content--trending-handle">@alex</div>
+                                <div class="content--trending-project">No Traffic Maker</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
