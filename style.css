@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Roboto';
-    src: url("assets/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+    src: url("./assets/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
 }
 
 @font-face {
     font-family: 'Material Icons';
-    src: url(/assets/Material_Symbols/Material_Symbols_Outlined/MaterialSymbolsOutlined-VariableFont_FILL\,GRAD\,opsz\,wght.ttf);
+    src: url("./assets/Material_Symbols/Material_Symbols_Outlined/MaterialSymbolsOutlined-VariableFont_FILL\,GRAD\,opsz\,wght.ttf");
 }
 
 * {
